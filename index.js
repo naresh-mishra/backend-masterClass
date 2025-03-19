@@ -16,7 +16,7 @@ const connectdb=require("./utils/database");
 //lets tackle cors
 const corseOptions=
 {//for making connection and telling backend that this url can be accessed (it is a part of our family )
-   origin:process.env.FRONTEND_URL ||"http://localhost:5173",
+   origin: "https://frontend-masterclass-naresh.onrender.com",
    methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
    credentials:true,
 }
