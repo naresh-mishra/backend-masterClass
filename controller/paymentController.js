@@ -34,7 +34,7 @@ const paymentVerification=async(req,res)=>{
     await payment.create({
       razorpay_order_id,razorpay_payment_id,razorpay_signature
     })
-    res.redirect(`http://localhost:5173/paymentsuccess?reference=${razorpay_payment_id}`);
+    res.redirect(`https://frontend-masterclass-naresh.onrender.com/paymentsuccess?reference=${razorpay_payment_id}`);
   }
   else
   {
